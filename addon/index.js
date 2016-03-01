@@ -2,7 +2,7 @@ import Ember from 'ember';
 
 export default Ember.Mixin.create({
   _actions: {
-    willTransition: function(transition) {
+    didTransition: function(transition) {
       this._super();
       var resetScroll = this.get('resetScroll');
 
